@@ -1,0 +1,135 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.impostor{
+    position: relative;
+}
+
+.impostor .body{
+    position: relative;
+    width: 300px;
+    height: 420px;
+    border-radius: 32% 48% 0 0;
+    border: 30px solid #000;
+    overflow: hidden;
+}
+.impostor .fill{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #780236;
+}
+
+.impostor .body .shadow{
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    background: red;
+    border-radius: 15% 27% 30% 40% / 22% 45% 100% 100%;
+}
+
+.impostor .glass-bowl{
+    position: absolute;
+    width: 220px;
+    height: 130px;
+    background: #4a646d;
+    right: -20px;
+    top: 90px;
+    border: 30px solid #000;
+    border-radius: 25% 45% 40% 40% / 50%;
+    overflow: hidden;
+    transform: rotate(-4deg);
+}
+
+.impostor .glass-bowl .reflection-blue{
+    position:  absolute;
+    right: 0;
+    width: 90%;
+    height: 70px;
+    background: lightblue;
+    border-radius: 10% 10% 100% 100% / 100% 100% 50% 100%;
+}
+
+.impostor .glass-bowl .reflection-white{
+    position:  absolute;
+    right: 40px;
+    top:10px;
+    width: 50%;
+    height: 40px;
+    background: white;
+    border-radius: 30% 70% 30% 30% / 30% 70% 30% 60%;
+}
+
+.legs{
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-30px);
+}
+
+.impostor .legs .leg-left{
+    width: 110px;
+    height: 130px;
+    background: #780236;
+    border-left: 30px solid #000;
+    border-right: 30px solid #000;
+    border-bottom: 30px solid #000;
+    border-radius: 0 0 40% 40%;
+}
+
+.impostor .legs .leg-right{
+    position: relative;
+    width: 90px;
+    height: 105px;
+    background: #780236;
+    border-left: 30px solid #000;
+    border-right: 30px solid #000;
+    border-bottom: 30px solid #000;
+    border-radius: 0 0 40% 40%;
+}
+
+.impostor .legs .leg-right:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 100px;
+    height: 30px;
+    background: #000;
+    border-radius: 0 0 100% 0;
+}
+
+.impostor .backpack{
+    position: absolute;
+    height: 280px;
+    width: 90px;
+    background: red;
+    border: 30px solid #000;
+    left: -90px;
+    top: 130px;
+    border-radius: 40% 0 0 40% / 15%;
+    overflow: hidden;
+}
+
+.impostor .backpack .shadow{
+    position: absolute;
+    width: 100%;
+    height: 85%;
+    background: #780236;
+    bottom: 0;
+    border-radius: 40% 0 0 40% / 10% 0 0 0;
+}
+
+.impostor .floor-shadow{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 470px;
+    height: 100px;
+    background: #525858;
+    border-radius: 50%;
+}
